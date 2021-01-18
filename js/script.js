@@ -13,8 +13,32 @@ var student = {
 console.log(student);
 
 // Stampare a schermo attraverso il for tutte le proprietà.
-
 for (var key in student) {
   console.log(student[key]);
   alert(student[key]);
 }
+
+// Creare un array di oggetti di studenti.
+var students = {
+  'iscritti' : []
+};
+
+var studentDue = {
+  'nome' : 'Piero',
+  'cognome' : 'Sabatini',
+  'età' : 22
+}
+
+var studentTre = {
+  'nome' : 'Giuseppe',
+  'cognome' : 'Guida',
+  'età' : 23
+}
+
+students.iscritti.push(student);
+console.log(students);
+students.iscritti.push(studentDue);
+console.log(students);
+students.iscritti.push(studentTre);
+console.log(students);
+console.log(students.iscritti)
