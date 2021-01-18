@@ -11,3 +11,10 @@ var student = {
   'età' : 25
 };
 console.log(student);
+
+// Stampare a schermo attraverso il for tutte le proprietà.
+
+for (var key in student) {
+  console.log(student[key]);
+  alert(student[key]);
+}
