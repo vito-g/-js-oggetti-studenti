@@ -36,17 +36,11 @@ var studentTre = {
 };
 
 students.iscritti.push(student);
-console.log(students);
-students.iscritti.push(studentDue);
-console.log(students);
-students.iscritti.push(studentTre);
-console.log(students);
-console.log(students.iscritti);
 
-// Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
-for ( var i = 0; i < students.iscritti.length; i++ ) {
-  alert(students.iscritti[i].nome + ' ' + students.iscritti[i].cognome);
-}
+students.iscritti.push(studentDue);
+
+students.iscritti.push(studentTre);
+// console.log(students.iscritti);
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 var studentForeign = {};
@@ -56,3 +50,10 @@ studentForeign.età = prompt('La tua età?');
 
 console.log(studentForeign);
 students.iscritti.push(studentForeign);
+
+// Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
+for ( var i = 0; i < students.iscritti.length; i++ ) {
+  alert(students.iscritti[i].nome + ' ' + students.iscritti[i].cognome);
+  console.log(students.iscritti[i]);
+}
+console.log(students.iscritti);
