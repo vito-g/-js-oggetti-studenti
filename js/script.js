@@ -44,8 +44,8 @@ students.iscritti.push(studentTre);
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 var studentForeign = {};
-studentForeign.nome = prompt('Il tuo cognome?');
-studentForeign.cognome = prompt('Il tuo nome');
+studentForeign.nome = capitalizeFirstLetter(prompt('Il tuo nome?'));
+studentForeign.cognome = capitalizeFirstLetter(prompt('Il tuo cognome'));
 studentForeign.età = prompt('La tua età?');
 
 // console.log(studentForeign);
@@ -57,3 +57,20 @@ for ( var i = 0; i < students.iscritti.length; i++ ) {
   console.log(students.iscritti[i]);
 }
 console.log(students.iscritti);
+
+//N.B.: In alternativa, per quanto riguarda l'array di oggetti, avrei potuto crearlo di getto, come segue:
+// var students = [
+//     {nome: 'Piero', cognome: 'Sabatini', eta: 22},
+//     {nome: 'Giuseppe', cognome: 'Guida', eta: 23}
+// ];
+//E pushare tutto direttamente nell'array di oggetti "students".
+//
+function capitalizeFirstLetter(string) {// Questa FX consente di impostare in maiuscolo la prima lettera di una stringa. La richiamo direttamente nel prompt
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+//N.B.: Altri casi interessanti per l' UPPERCASE:
+// function capitalizeFirstLetter(string) {// Questa FX consente di impostare in maiuscolo la prima lettera di una stringa. La richiamo direttamente nel prompt
+//   // return string.charAt(0).toUpperCase(); //Ritorna solo la prima lettera della stringa inserita e la riporta in maiuscolo
+//   return string.toUpperCase();//Ritorna tutta la stringa in maiuscolo
+// }
