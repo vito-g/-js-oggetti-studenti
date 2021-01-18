@@ -48,7 +48,7 @@ studentForeign.nome = prompt('Il tuo cognome?');
 studentForeign.cognome = prompt('Il tuo nome');
 studentForeign.età = prompt('La tua età?');
 
-console.log(studentForeign);
+// console.log(studentForeign);
 students.iscritti.push(studentForeign);
 
 // Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
