@@ -27,13 +27,13 @@ var studentDue = {
   'nome' : 'Piero',
   'cognome' : 'Sabatini',
   'età' : 22
-}
+};
 
 var studentTre = {
   'nome' : 'Giuseppe',
   'cognome' : 'Guida',
   'età' : 23
-}
+};
 
 students.iscritti.push(student);
 console.log(students);
@@ -47,3 +47,12 @@ console.log(students.iscritti);
 for ( var i = 0; i < students.iscritti.length; i++ ) {
   alert(students.iscritti[i].nome + ' ' + students.iscritti[i].cognome);
 }
+
+// Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+var studentForeign = {};
+studentForeign.nome = prompt('Il tuo cognome?');
+studentForeign.cognome = prompt('Il tuo nome');
+studentForeign.età = prompt('La tua età?');
+
+console.log(studentForeign);
+students.iscritti.push(studentForeign);
