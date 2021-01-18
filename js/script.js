@@ -41,4 +41,9 @@ students.iscritti.push(studentDue);
 console.log(students);
 students.iscritti.push(studentTre);
 console.log(students);
-console.log(students.iscritti)
+console.log(students.iscritti);
+
+// Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
+for ( var i = 0; i < students.iscritti.length; i++ ) {
+  alert(students.iscritti[i].nome + ' ' + students.iscritti[i].cognome);
+}
